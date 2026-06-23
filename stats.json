@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 26,
+        "easy": 27,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "aeea34be0554f8e0d213895b21f48083988c1d61"
+                "": "d2d4a7781c54528ae4ad555ed73d81b0d6b07f57"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -137,8 +137,12 @@
             "HashTable/0242-valid-anagram": {
                 "0242-valid-anagram.py": "0f2f9b39189f3ceb027cb2e5078f84728ec0d5b8",
                 "difficulty": "easy"
+            },
+            "TwoPointers/0283-move-zeroes": {
+                "0283-move-zeroes.py": "573a9b252b7c3a5da3a7a9aa6b5e70aa0eac614c",
+                "difficulty": "easy"
             }
         },
-        "solved": 32
+        "solved": 33
     }
 }
