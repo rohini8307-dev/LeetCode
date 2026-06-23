@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 11,
+        "easy": 12,
         "hard": 0,
         "medium": 1,
         "shas": {
             "README.md": {
-                "": "e4c23c1b4aefe8b8a1f33931a9d41f2a3da6614e"
+                "": "e111bc2634b6af780b6fea7990a9ef029509d7c5"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -57,8 +57,12 @@
             "Array/2798-number-of-employees-who-met-the-target": {
                 "2798-number-of-employees-who-met-the-target.py": "4880bc534775b191aca1b28ef068fdb73b5ac734",
                 "difficulty": "easy"
+            },
+            "Greedy/0121-best-time-to-buy-and-sell-stock": {
+                "0121-best-time-to-buy-and-sell-stock.py": "14481e36b1526b34da6c83decf45fb5d710c0da3",
+                "difficulty": "easy"
             }
         },
-        "solved": 12
+        "solved": 13
     }
 }

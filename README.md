@@ -3,7 +3,6 @@
 ## Array
 |  |
 | ------- |
-| [0121-best-time-to-buy-and-sell-stock](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0121-best-time-to-buy-and-sell-stock.py) |
 | [0821-shortest-distance](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0821-shortest-distance.py) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1295-find-numbers-with-even-number-of-digits.py) |
 | [1480-running-sum-of-1d-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1480-running-sum-of-1d-array.py) |
@@ -27,4 +26,8 @@
 |  |
 | ------- |
 | [0057-insert-interval](https://github.com/rohini8307-dev/LEETCODE/tree/master/Intervals/0057-insert-interval.py) |
+## Greedy
+|  |
+| ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/rohini8307-dev/LEETCODE/tree/master/Greedy/0121-best-time-to-buy-and-sell-stock.py) |
 <!---LeetCode Topics End-->
