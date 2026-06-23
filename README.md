@@ -39,4 +39,8 @@
 | [0345-reverse-vowels-of-a-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0345-reverse-vowels-of-a-string.py) |
 | [0917-reverse-only-letters](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0917-reverse-only-letters.py) |
 | [1768-merge-strings-alternately](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/1768-merge-strings-alternately.py) |
+## Hash Table
+|  |
+| ------- |
+| [0349-intersection-of-two-arrays](https://github.com/rohini8307-dev/LEETCODE/tree/master/Hash Table/0349-intersection-of-two-arrays.py) |
 <!---LeetCode Topics End-->

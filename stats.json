@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 16,
+        "easy": 17,
         "hard": 0,
         "medium": 2,
         "shas": {
             "README.md": {
-                "": "f07775b268aca73525fa1491d622f602a21adb68"
+                "": "398bf58723da04712222fe2c20f612bedeafff66"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -81,8 +81,12 @@
             "Two Pointers/1768-merge-strings-alternately": {
                 "1768-merge-strings-alternately.py": "8b8c4b4db62c86839564a305d32485452280bf8d",
                 "difficulty": "easy"
+            },
+            "Hash Table/0349-intersection-of-two-arrays": {
+                "0349-intersection-of-two-arrays.py": "c60ff1b31c0efe7a831daac5beb2e0b5045868cc",
+                "difficulty": "easy"
             }
         },
-        "solved": 18
+        "solved": 19
     }
 }
