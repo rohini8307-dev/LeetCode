@@ -397,10 +397,6 @@
             </select>
           </label>
           <label class="lls-full">
-            Topics, comma separated (for reference)
-            <input name="topics" type="text" value="${escapeHtml(topics)}" readonly>
-          </label>
-          <label class="lls-full">
             Topic folder name (required)
             <input name="topic" type="text" value="${escapeHtml(defaultTopic)}" placeholder="e.g., Array, Sliding Window">
           </label>
