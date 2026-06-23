@@ -141,15 +141,16 @@ def set_if_changed(
         container[key] = value
 
 
-def problem_topic_row(topic: str, solution_file_display: str) -> str:
-    """Generate a table row for a problem in the README."""
-    url = f"{GITHUB_TREE_URL}/{topic}/{solution_file_display}"
-    return f"| [{solution_file_display}]({url}) |"
+def problem_topic_row(topic: str, solution_filename_with_ext: str) -> str:
+    """Generate a table row for a problem in the README with proper link to the .py file."""
+    display_name = Path(solution_filename_with_ext).stem
+    url = f"{GITHUB_TREE_URL}/{topic}/{solution_filename_with_ext}"
+    return f"| [{display_name}]({url}) |"
 
 
 def problem_info_from_topic_row(match: re.Match[str]) -> tuple[str, str]:
-    """Extract topic and problem file name from a README topic row.
-    Returns (problem_file_display, topic_from_url)
+    """Extract problem file display name and topic from a README topic row.
+    Returns (problem_file_display_without_ext, topic_from_url)
     """
     label = match.group("label")
     url = match.group("url")
@@ -159,8 +160,10 @@ def problem_info_from_topic_row(match: re.Match[str]) -> tuple[str, str]:
         path_part = url[len(github_tree_prefix):]
         parts = path_part.split('/')
         if len(parts) == 2:
-            topic, problem_file = parts
-            return problem_file, topic
+            topic, filename_with_ext = parts
+            # Extract display name (without extension)
+            display_name = Path(filename_with_ext).stem
+            return display_name, topic
     
     return label, ""
 
@@ -229,7 +232,7 @@ def render_topic_sections(
 def update_root_readme_topics(
     repo_root: Path,
     topic_name: str,
-    solution_file_display: str,
+    solution_filename_with_ext: str,
 ) -> list[str]:
     """
     Update README.md to add a solution file to a topic section.
@@ -237,8 +240,11 @@ def update_root_readme_topics(
     Args:
         repo_root: Repository root path
         topic_name: Name of the topic folder (e.g., "Array", "Sliding Window")
-        solution_file_display: Solution file name without extension (e.g., "0821-shortest-distance")
+        solution_filename_with_ext: Solution file name WITH extension (e.g., "0821-shortest-distance.py")
     """
+    # Extract display name without extension for internal tracking
+    solution_file_display = Path(solution_filename_with_ext).stem
+    
     readme_path = repo_root / "README.md"
     if not readme_path.is_file():
         raise StatsError("README.md was not found")
@@ -268,7 +274,7 @@ def update_root_readme_topics(
     if duplicate_topics:
         raise StatsError(f"README.md has duplicate topic sections: {', '.join(duplicate_topics)}")
 
-    target_row = problem_topic_row(topic_name, solution_file_display)
+    target_row = problem_topic_row(topic_name, solution_filename_with_ext)
     changes: list[str] = []
 
     # Update existing sections
@@ -511,11 +517,12 @@ def main() -> int:
         extension_override = None
         
         if args.topic:
-            # Update README with the new solution
+            # Update README with the new solution (pass full filename with extension)
+            full_solution_filename = f"{args.problem_file}{args.extension}"
             readme_changes = update_root_readme_topics(
                 repo_root,
                 args.topic,
-                args.problem_file,
+                full_solution_filename,
             )
             topic_override = args.topic
             difficulty_override = args.difficulty

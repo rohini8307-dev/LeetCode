@@ -15,5 +15,5 @@
 ## Intervals
 |  |
 | ------- |
-| [0057-insert-interval](https://github.com/rohini8307-dev/LEETCODE/tree/master/Intervals/0057-insert-interval) |
+| [0057-insert-interval](https://github.com/rohini8307-dev/LEETCODE/tree/master/Intervals/0057-insert-interval.py) |
 <!---LeetCode Topics End-->
