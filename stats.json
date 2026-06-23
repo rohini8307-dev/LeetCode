@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 18,
+        "easy": 17,
         "hard": 0,
         "medium": 2,
         "shas": {
             "README.md": {
-                "": "18cc9dc17fafc3b303cd0a866d837ae8ed29ad08"
+                "": "e00e24ab802d46010d9c184908d080938505d62b"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -58,39 +58,35 @@
                 "0121-best-time-to-buy-and-sell-stock.py": "14481e36b1526b34da6c83decf45fb5d710c0da3",
                 "difficulty": "easy"
             },
-            "Two Pointers/0344-reverse-string": {
-                "0344-reverse-string.py": "d17fb4e8927a469cf4c3ea3c786ec105b371fb6a",
-                "difficulty": "easy"
-            },
-            "Two Pointers/0088-merge-sorted-array": {
-                "0088-merge-sorted-array.py": "0d408db643c41ac30aac9de2067f3b7d46b3986a",
-                "difficulty": "easy"
-            },
-            "Two Pointers/0917-reverse-only-letters": {
-                "0917-reverse-only-letters.py": "7363e14c1f9f0939654742345910e272cccc3f05",
-                "difficulty": "easy"
-            },
-            "Two Pointers/0345-reverse-vowels-of-a-string": {
-                "0345-reverse-vowels-of-a-string.py": "1563aea19e581a78cdbb9ba73aae68541a2a4bd6",
-                "difficulty": "easy"
-            },
-            "Two Pointers/0167-two-sum-ii-input-array-is-sorted": {
-                "0167-two-sum-ii-input-array-is-sorted.py": "afb76099df903683586108fd829a01d279d8a8f1",
-                "difficulty": "medium"
-            },
-            "Two Pointers/1768-merge-strings-alternately": {
-                "1768-merge-strings-alternately.py": "8b8c4b4db62c86839564a305d32485452280bf8d",
-                "difficulty": "easy"
-            },
-            "Hash Table/0349-intersection-of-two-arrays": {
-                "0349-intersection-of-two-arrays.py": "c60ff1b31c0efe7a831daac5beb2e0b5045868cc",
-                "difficulty": "easy"
-            },
             "HashTable/0349-intersection-of-two-arrays": {
                 "0349-intersection-of-two-arrays.py": "c60ff1b31c0efe7a831daac5beb2e0b5045868cc",
                 "difficulty": "easy"
+            },
+            "TwoPointers/0088-merge-sorted-array": {
+                "0088-merge-sorted-array.py": "0d408db643c41ac30aac9de2067f3b7d46b3986a",
+                "difficulty": "easy"
+            },
+            "TwoPointers/0167-two-sum-ii-input-array-is-sorted": {
+                "0167-two-sum-ii-input-array-is-sorted.py": "afb76099df903683586108fd829a01d279d8a8f1",
+                "difficulty": "medium"
+            },
+            "TwoPointers/0344-reverse-string": {
+                "0344-reverse-string.py": "d17fb4e8927a469cf4c3ea3c786ec105b371fb6a",
+                "difficulty": "easy"
+            },
+            "TwoPointers/0345-reverse-vowels-of-a-string": {
+                "0345-reverse-vowels-of-a-string.py": "1563aea19e581a78cdbb9ba73aae68541a2a4bd6",
+                "difficulty": "easy"
+            },
+            "TwoPointers/0917-reverse-only-letters": {
+                "0917-reverse-only-letters.py": "7363e14c1f9f0939654742345910e272cccc3f05",
+                "difficulty": "easy"
+            },
+            "TwoPointers/1768-merge-strings-alternately": {
+                "1768-merge-strings-alternately.py": "8b8c4b4db62c86839564a305d32485452280bf8d",
+                "difficulty": "easy"
             }
         },
-        "solved": 20
+        "solved": 19
     }
 }
