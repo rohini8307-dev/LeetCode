@@ -3,30 +3,24 @@
 ## Array
 |  |
 | ------- |
-| [0821-shortest-distance-to-a-character](https://github.com/rohini8307-dev/LEETCODE/tree/master/0821-shortest-distance-to-a-character) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0121-best-time-to-buy-and-sell-stock.py) |
+| [0821-shortest-distance](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0821-shortest-distance.py) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1295-find-numbers-with-even-number-of-digits.py) |
-## Two Pointers
+## BinarySearch
 |  |
 | ------- |
-| [0821-shortest-distance-to-a-character](https://github.com/rohini8307-dev/LEETCODE/tree/master/0821-shortest-distance-to-a-character) |
-## String
+| [0704-binary-search](https://github.com/rohini8307-dev/LEETCODE/tree/master/BinarySearch/0704-binary-search.py) |
+## BitManipulation
 |  |
 | ------- |
-| [0821-shortest-distance-to-a-character](https://github.com/rohini8307-dev/LEETCODE/tree/master/0821-shortest-distance-to-a-character) |
+| [0389-find-the-difference](https://github.com/rohini8307-dev/LEETCODE/tree/master/BitManipulation/0389-find-the-difference.py) |
+## HashTable
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0001-two-sum.py) |
+| [0217-contains-duplicate](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0217-contains-duplicate.py) |
 ## Intervals
 |  |
 | ------- |
 | [0057-insert-interval](https://github.com/rohini8307-dev/LEETCODE/tree/master/Intervals/0057-insert-interval.py) |
-## Binary Search
-|  |
-| ------- |
-| [0704-binary-search](https://github.com/rohini8307-dev/LEETCODE/tree/master/Binary Search/0704-binary-search.py) |
-## Hash Table
-|  |
-| ------- |
-| [0217-contains-duplicate](https://github.com/rohini8307-dev/LEETCODE/tree/master/Hash Table/0217-contains-duplicate.py) |
-## Bit Manipulation
-|  |
-| ------- |
-| [0389-find-the-difference](https://github.com/rohini8307-dev/LEETCODE/tree/master/Bit Manipulation/0389-find-the-difference.py) |
 <!---LeetCode Topics End-->

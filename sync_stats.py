@@ -229,6 +229,60 @@ def render_topic_sections(
     return lines
 
 
+def regenerate_readme_from_folders(repo_root: Path) -> tuple[list[str], list[str]]:
+    """
+    Regenerate README topics section completely from actual topic folders on disk.
+    Returns (new_lines, changes)
+    """
+    readme_path = repo_root / "README.md"
+    if not readme_path.is_file():
+        raise StatsError("README.md was not found")
+    
+    original_text = readme_path.read_text(encoding="utf-8")
+    lines = original_text.splitlines()
+    
+    start_indexes = [i for i, line in enumerate(lines) if line == README_TOPICS_START]
+    end_indexes = [i for i, line in enumerate(lines) if line == README_TOPICS_END]
+    if len(start_indexes) != 1 or len(end_indexes) != 1:
+        raise StatsError("README.md must have exactly one LeetCode topics start marker and one end marker")
+    
+    start_index = start_indexes[0]
+    end_index = end_indexes[0]
+    if start_index >= end_index:
+        raise StatsError("README.md LeetCode topics markers are out of order")
+    
+    intro, old_sections = split_topic_sections(lines[start_index + 1 : end_index])
+    changes: list[str] = []
+    
+    # Scan actual folders for solutions
+    topics_dict = topic_folders(repo_root)
+    new_sections = []
+    
+    for topic_name in sorted(topics_dict.keys()):
+        solution_files = topics_dict[topic_name]
+        rows = []
+        for solution_file in sorted(solution_files, key=lambda f: problem_sort_key(f.name)):
+            display_name = solution_file.stem
+            row_html = problem_topic_row(topic_name, solution_file.name)
+            rows.append((display_name, topic_name, row_html))
+        
+        if rows:
+            new_sections.append({"topic": topic_name, "rows": rows})
+            changes.append(f"README.md: regenerate topic {topic_name}")
+    
+    new_lines = (
+        lines[: start_index + 1]
+        + render_topic_sections(intro, new_sections)
+        + lines[end_index:]
+    )
+    new_text = "\n".join(new_lines) + "\n"
+    
+    if new_text != original_text:
+        readme_path.write_text(new_text, encoding="utf-8")
+    
+    return new_lines, changes
+
+
 def update_root_readme_topics(
     repo_root: Path,
     topic_name: str,
@@ -528,6 +582,9 @@ def main() -> int:
             difficulty_override = args.difficulty
             solution_file_override = args.problem_file
             extension_override = args.extension
+        elif args.write:
+            # When just running --write without --topic, regenerate entire README from folders
+            _, readme_changes = regenerate_readme_from_folders(repo_root)
 
         current = load_stats(stats_path)
         expected, changes = build_expected_stats(
@@ -555,7 +612,7 @@ def main() -> int:
 
     if changes:
         write_stats(stats_path, expected)
-        target = "README.md and stats.json" if args.topic else "stats.json"
+        target = "README.md and stats.json" if readme_changes else "stats.json"
         print(f"Updated {target} ({len(changes)} change(s)):")
         for change in changes:
             print(f"- {change}")
