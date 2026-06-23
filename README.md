@@ -31,6 +31,7 @@
 | [0217-contains-duplicate](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0217-contains-duplicate.py) |
 | [0242-valid-anagram](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0242-valid-anagram.py) |
 | [0349-intersection-of-two-arrays](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0349-intersection-of-two-arrays.py) |
+| [0414-third-maximum-number](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0414-third-maximum-number.py) |
 ## Intervals
 |  |
 | ------- |
