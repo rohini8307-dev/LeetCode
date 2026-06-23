@@ -22,6 +22,7 @@
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rohini8307-dev/LEETCODE/tree/master/Greedy/0121-best-time-to-buy-and-sell-stock.py) |
+| [0169-majority-element](https://github.com/rohini8307-dev/LEETCODE/tree/master/Greedy/0169-majority-element.py) |
 ## HashTable
 |  |
 | ------- |
