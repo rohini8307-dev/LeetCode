@@ -2,10 +2,10 @@
     "leetcode": {
         "easy": 15,
         "hard": 0,
-        "medium": 1,
+        "medium": 2,
         "shas": {
             "README.md": {
-                "": "dc6f904efc59e7b4eb8ba6367cbd8d5aa6fbd2b8"
+                "": "e48f58ddcbc39f9755c675f371c62a24352a430f"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -73,8 +73,12 @@
             "Two Pointers/0345-reverse-vowels-of-a-string": {
                 "0345-reverse-vowels-of-a-string.py": "1563aea19e581a78cdbb9ba73aae68541a2a4bd6",
                 "difficulty": "easy"
+            },
+            "Two Pointers/0167-two-sum-ii-input-array-is-sorted": {
+                "0167-two-sum-ii-input-array-is-sorted.py": "afb76099df903683586108fd829a01d279d8a8f1",
+                "difficulty": "medium"
             }
         },
-        "solved": 16
+        "solved": 17
     }
 }

@@ -34,6 +34,7 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0088-merge-sorted-array.py) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0167-two-sum-ii-input-array-is-sorted.py) |
 | [0344-reverse-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0344-reverse-string.py) |
 | [0345-reverse-vowels-of-a-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0345-reverse-vowels-of-a-string.py) |
 | [0917-reverse-only-letters](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0917-reverse-only-letters.py) |
