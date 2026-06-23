@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 23,
+        "easy": 24,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "f96a8c8240a1aebd92aaefeac926731173d6b896"
+                "": "d36d259bba664619977c9c21631ed32e39c598cd"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -125,8 +125,12 @@
             "TwoPointers/0151-reverse-words-in-a-string": {
                 "0151-reverse-words-in-a-string.py": "bc669decfe4409ad7a158858ec3fe1c4af0f5e72",
                 "difficulty": "medium"
+            },
+            "TwoPointers/0455-assign-cookies": {
+                "0455-assign-cookies.py": "ba73fc538cab26eabfb37951b7f4e819ee4376b9",
+                "difficulty": "easy"
             }
         },
-        "solved": 29
+        "solved": 30
     }
 }
