@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 10,
+        "easy": 11,
         "hard": 0,
         "medium": 1,
         "shas": {
             "README.md": {
-                "": "804d116e5efcb6302cefa22a1e39145ddbb7d5dc"
+                "": "e4c23c1b4aefe8b8a1f33931a9d41f2a3da6614e"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -53,8 +53,12 @@
             "Array/2529-maximum-count-of-positive-integer-and-negative-integer": {
                 "2529-maximum-count-of-positive-integer-and-negative-integer.py": "a67fb57d042aaf1815c7cb788533c4d8b36bb846",
                 "difficulty": "easy"
+            },
+            "Array/2798-number-of-employees-who-met-the-target": {
+                "2798-number-of-employees-who-met-the-target.py": "4880bc534775b191aca1b28ef068fdb73b5ac734",
+                "difficulty": "easy"
             }
         },
-        "solved": 11
+        "solved": 12
     }
 }
