@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 28,
+        "easy": 29,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "b247223f043e64d01ebfd1a3e4606a7498c1850a"
+                "": "7db91790d079b72173dabd1c70888170912199ea"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -145,8 +145,12 @@
             "BitManipulation/0136-single-number": {
                 "0136-single-number.py": "213198c5017a75851f088709c5a066c3fc564522",
                 "difficulty": "easy"
+            },
+            "TwoPointers/0009-palindrome-number": {
+                "0009-palindrome-number.py": "d9396e64e13b5d55aea93951ccaed90af75a21fd",
+                "difficulty": "easy"
             }
         },
-        "solved": 34
+        "solved": 35
     }
 }
