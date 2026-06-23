@@ -2,10 +2,10 @@
     "leetcode": {
         "easy": 19,
         "hard": 0,
-        "medium": 2,
+        "medium": 3,
         "shas": {
             "README.md": {
-                "": "1aad4f3ea8e37a0efa6d9c34f81509ef72ebffbb"
+                "": "48e31a0ff9273c59da6434a219aa0441175c4177"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -93,8 +93,12 @@
             "TwoPointers/0026-remove-duplicates-from-sorted-array": {
                 "0026-remove-duplicates-from-sorted-array.py": "bfa4b62ad55f02aee8222348f592e3881cd551a1",
                 "difficulty": "easy"
+            },
+            "Array/0189-rotate-array": {
+                "0189-rotate-array.py": "f1630c21fb212cb463facac4c4eca71bcb4f7af9",
+                "difficulty": "medium"
             }
         },
-        "solved": 21
+        "solved": 22
     }
 }
