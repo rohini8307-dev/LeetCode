@@ -2,10 +2,10 @@
     "leetcode": {
         "easy": 1,
         "hard": 0,
-        "medium": 0,
+        "medium": 1,
         "shas": {
             "README.md": {
-                "": "5bb26055a434db6bdab1dbe1af284678cf324a9b"
+                "": "4996adf07b234783a3fa5d08456787145a0db58f"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -13,8 +13,12 @@
             "Array/0821-shortest-distance": {
                 "0821-shortest-distance.py": "d05a14d75f6e2038a3847bab3d191b00805990dd",
                 "difficulty": "easy"
+            },
+            "Intervals/0057-insert-interval": {
+                "0057-insert-interval.py": "7c2c960d22727da672fdfdcf9501144accf078c9",
+                "difficulty": "medium"
             }
         },
-        "solved": 1
+        "solved": 2
     }
 }
