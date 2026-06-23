@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 21,
+        "easy": 22,
         "hard": 0,
         "medium": 3,
         "shas": {
             "README.md": {
-                "": "188ff287b74bafb471ad65c390edd2c5511d76b1"
+                "": "98ca5627a47e5660e6f1972e23d01b1eeacdd498"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -105,8 +105,12 @@
             "TwoPointers/0977-squares-of-a-sorted-array": {
                 "0977-squares-of-a-sorted-array.py": "7d8eeb301a5f501b685e1d433b85df99faa83980",
                 "difficulty": "easy"
+            },
+            "TwoPointers/2108-find-first-palindromic-string-in-the-array": {
+                "2108-find-first-palindromic-string-in-the-array.py": "43ed2dfa0073463cd98ff167fb028461e6389e92",
+                "difficulty": "easy"
             }
         },
-        "solved": 24
+        "solved": 25
     }
 }
