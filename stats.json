@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 15,
+        "easy": 16,
         "hard": 0,
         "medium": 2,
         "shas": {
             "README.md": {
-                "": "e48f58ddcbc39f9755c675f371c62a24352a430f"
+                "": "f07775b268aca73525fa1491d622f602a21adb68"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -77,8 +77,12 @@
             "Two Pointers/0167-two-sum-ii-input-array-is-sorted": {
                 "0167-two-sum-ii-input-array-is-sorted.py": "afb76099df903683586108fd829a01d279d8a8f1",
                 "difficulty": "medium"
+            },
+            "Two Pointers/1768-merge-strings-alternately": {
+                "1768-merge-strings-alternately.py": "8b8c4b4db62c86839564a305d32485452280bf8d",
+                "difficulty": "easy"
             }
         },
-        "solved": 17
+        "solved": 18
     }
 }
