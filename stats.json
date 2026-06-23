@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 7,
+        "easy": 8,
         "hard": 0,
         "medium": 1,
         "shas": {
             "README.md": {
-                "": "538de9f4ae4cfb4480f669ff2896f8921f05225c"
+                "": "957dee79f9ba64d6ce937f7710eb73cbe7aed3dd"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -41,8 +41,12 @@
             "HashTable/0217-contains-duplicate": {
                 "0217-contains-duplicate.py": "19fd8a1c24695a574d7b0c221b5d237858d82155",
                 "difficulty": "easy"
+            },
+            "Array/1672-richest-customer-wealth": {
+                "1672-richest-customer-wealth.py": "fcb371215e5d92684c3912b1e57b3742da84a1f9",
+                "difficulty": "easy"
             }
         },
-        "solved": 8
+        "solved": 9
     }
 }
