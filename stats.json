@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 17,
+        "easy": 18,
         "hard": 0,
         "medium": 2,
         "shas": {
             "README.md": {
-                "": "e00e24ab802d46010d9c184908d080938505d62b"
+                "": "e126d20aab9362375584f2e306fd7900643dd0de"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -85,8 +85,12 @@
             "TwoPointers/1768-merge-strings-alternately": {
                 "1768-merge-strings-alternately.py": "8b8c4b4db62c86839564a305d32485452280bf8d",
                 "difficulty": "easy"
+            },
+            "TwoPointers/0392-is-subsequence": {
+                "0392-is-subsequence.py": "2d56a2835c24f255bb71ddf8e62895e99042558c",
+                "difficulty": "easy"
             }
         },
-        "solved": 19
+        "solved": 20
     }
 }

@@ -38,6 +38,7 @@
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0167-two-sum-ii-input-array-is-sorted.py) |
 | [0344-reverse-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0344-reverse-string.py) |
 | [0345-reverse-vowels-of-a-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0345-reverse-vowels-of-a-string.py) |
+| [0392-is-subsequence](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0392-is-subsequence.py) |
 | [0917-reverse-only-letters](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0917-reverse-only-letters.py) |
 | [1768-merge-strings-alternately](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/1768-merge-strings-alternately.py) |
 <!---LeetCode Topics End-->
