@@ -176,10 +176,15 @@ def normalize_payload(payload: dict[str, Any]) -> dict[str, Any]:
         raise LocalLeetCodeError("payload.problem must be an object")
 
     slug = normalize_slug(problem.get("slug") or problem.get("titleSlug"))
-    folder = problem_folder_name(problem.get("frontendId"), slug)
-    if not PROBLEM_FOLDER_RE.match(folder):
-        raise LocalLeetCodeError(f"invalid problem folder: {folder}")
-
+    problem_file_name = problem_folder_name(problem.get("frontendId"), slug)
+    
+    # Get topic from payload (user provided or default to first topic from problem)
+    topic = str(payload.get("topic") or "").strip()
+    if not topic:
+        # Fallback to first topic from problem metadata
+        topics = clean_topics(problem.get("topics"))
+        topic = topics[0] if topics else "Uncategorized"
+    
     difficulty = normalize_difficulty(problem.get("difficulty"))
     topics = clean_topics(problem.get("topics"))
     extension = language_extension(payload.get("language"), payload.get("langSlug"))
@@ -188,21 +193,17 @@ def normalize_payload(payload: dict[str, Any]) -> dict[str, Any]:
     if not code.strip():
         raise LocalLeetCodeError("solution code cannot be empty")
 
-    readme = str(payload.get("readmeContent") or "").replace("\r\n", "\n")
-    if not readme.strip():
-        raise LocalLeetCodeError("README content cannot be empty")
-
     commit_message = str(payload.get("commitMessage") or "").strip()
     if not commit_message:
         raise LocalLeetCodeError("commit message cannot be empty")
 
     return {
-        "folder": folder,
+        "topic": topic,
+        "problem_file_name": problem_file_name,
         "difficulty": difficulty,
         "topics": topics,
         "extension": extension,
         "code": code.rstrip() + "\n",
-        "readme": readme.rstrip() + "\n",
         "commitMessage": commit_message,
         "overwrite": bool(payload.get("overwrite")),
     }
@@ -220,56 +221,33 @@ def existing_solution_files(problem_dir: Path) -> list[str]:
 
 def preview_payload(root: Path, payload: dict[str, Any]) -> dict[str, Any]:
     normalized = normalize_payload(payload)
-    folder = normalized["folder"]
-    problem_dir = root / folder
-    solution_file = f"{folder}{normalized['extension']}"
+    topic = normalized["topic"]
+    problem_file_name = normalized["problem_file_name"]
+    solution_file = f"{problem_file_name}{normalized['extension']}"
+    topic_dir = root / topic
+    solution_path = topic_dir / solution_file
+    
     return {
-        "problemFolder": folder,
-        "exists": problem_dir.exists(),
-        "solutionPath": f"{folder}/{solution_file}",
-        "readmePath": f"{folder}/README.md",
-        "existingFiles": sorted(child.name for child in problem_dir.iterdir())
-        if problem_dir.is_dir()
-        else [],
-        "existingSolutionFiles": existing_solution_files(problem_dir),
+        "topic": topic,
+        "problemFileName": problem_file_name,
+        "exists": solution_path.exists(),
+        "solutionPath": f"{topic}/{solution_file}",
         "difficulty": normalized["difficulty"],
         "topics": normalized["topics"],
         "commitMessage": normalized["commitMessage"],
     }
 
 
-def canonicalize_readme(problem_dir: Path) -> None:
-    if not problem_dir.is_dir():
-        return
-
-    for child in problem_dir.iterdir():
-        if child.is_file() and child.name.lower() == "readme.md" and child.name != "README.md":
-            temp = problem_dir / "README.__tmp__"
-            target = problem_dir / "README.md"
-            child.rename(temp)
-            temp.rename(target)
-            return
-
-
 def write_problem_files(root: Path, normalized: dict[str, Any]) -> None:
-    folder = normalized["folder"]
-    problem_dir = root / folder
-    exists = problem_dir.exists()
-    if exists and not normalized["overwrite"]:
-        raise LocalLeetCodeError(f"{folder} already exists; confirm overwrite first")
-
-    problem_dir.mkdir(parents=True, exist_ok=True)
-    canonicalize_readme(problem_dir)
-
-    solution_name = f"{folder}{normalized['extension']}"
-    solution_path = problem_dir / solution_name
-
-    for old_solution in existing_solution_files(problem_dir):
-        if old_solution != solution_name:
-            (problem_dir / old_solution).unlink()
-
+    topic = normalized["topic"]
+    problem_file_name = normalized["problem_file_name"]
+    topic_dir = root / topic
+    
+    topic_dir.mkdir(parents=True, exist_ok=True)
+    
+    solution_name = f"{problem_file_name}{normalized['extension']}"
+    solution_path = topic_dir / solution_name
     solution_path.write_text(normalized["code"], encoding="utf-8")
-    (problem_dir / "README.md").write_text(normalized["readme"], encoding="utf-8")
 
 
 def sync_stats(root: Path, normalized: dict[str, Any]) -> list[str]:
@@ -277,12 +255,14 @@ def sync_stats(root: Path, normalized: dict[str, Any]) -> list[str]:
         sys.executable,
         "sync_stats.py",
         "--write",
-        "--problem",
-        normalized["folder"],
+        "--topic",
+        normalized["topic"],
         "--difficulty",
         normalized["difficulty"],
-        "--topics",
-        *normalized["topics"],
+        "--problem-file",
+        normalized["problem_file_name"],
+        "--extension",
+        normalized["extension"],
     ]
     write_result = command_or_error(command, cwd=root)
     check_result = command_or_error([sys.executable, "sync_stats.py", "--check"], cwd=root)
@@ -290,8 +270,8 @@ def sync_stats(root: Path, normalized: dict[str, Any]) -> list[str]:
 
 
 def commit_changes(root: Path, normalized: dict[str, Any]) -> dict[str, Any]:
-    folder = normalized["folder"]
-    pathspecs = [folder, "README.md", "stats.json"]
+    topic = normalized["topic"]
+    pathspecs = [topic, "README.md", "stats.json"]
 
     command_or_error(["git", "add", "--", *pathspecs], cwd=root)
     diff_result = run_command(["git", "diff", "--cached", "--quiet", "--", *pathspecs], cwd=root)

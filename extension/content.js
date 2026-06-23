@@ -255,6 +255,12 @@
     return id && /^\d+$/.test(id) ? `${String(Number(id)).padStart(4, "0")}-${slug}` : slug;
   }
 
+  function getDefaultTopic(question) {
+    // Return the first topic from the question, or empty string
+    const topicTags = question.topicTags || [];
+    return topicTags.length > 0 ? topicTags[0].name : "";
+  }
+
   async function postLocal(path, payload, options) {
     const serverUrl = (options.serverUrl || DEFAULT_SERVER_URL).replace(/\/$/, "");
     const response = await fetch(`${serverUrl}${path}`, {
@@ -281,10 +287,10 @@
         difficulty: modal.querySelector("[name='difficulty']").value,
         topics: splitTopics(modal.querySelector("[name='topics']").value)
       },
+      topic: modal.querySelector("[name='topic']").value.trim(),
       language: modal.querySelector("[name='language']").value.trim(),
       langSlug: modal.querySelector("[name='langSlug']").value.trim(),
       code: modal.querySelector("[name='code']").value,
-      readmeContent: modal.querySelector("[name='readme']").value,
       commitMessage: modal.querySelector("[name='commitMessage']").value.trim(),
       overwrite: modal.querySelector("[name='overwrite']").checked
     };
@@ -326,8 +332,8 @@
     };
     await setStorage(options);
     const payload = buildPayloadFromForm(modal);
-    if (!payload.readmeContent.trim()) {
-      throw new Error("README notes are required. Paste or type your LeetCode note first.");
+    if (!payload.topic.trim()) {
+      throw new Error("Topic is required. Enter the topic folder name where to store the solution.");
     }
     if (!payload.commitMessage.trim()) {
       throw new Error("Commit message is required. Use the Time/Space result format.");
@@ -335,7 +341,7 @@
 
     const currentPreview = await preview(modal);
     if (currentPreview.exists && !payload.overwrite) {
-      throw new Error("This problem folder exists. Confirm overwrite before saving.");
+      throw new Error("This solution already exists. Confirm overwrite before saving.");
     }
 
     const result = await postLocal("/save", payload, options);
@@ -350,6 +356,7 @@
     const question = pageData.question;
     const topics = (question.topicTags || []).map((topic) => topic.name).join(", ");
     const difficulty = String(question.difficulty || "Medium").toLowerCase();
+    const defaultTopic = getDefaultTopic(question);
     const folder = problemFolder(question);
 
     const overlay = document.createElement("div");
@@ -390,8 +397,12 @@
             </select>
           </label>
           <label class="lls-full">
-            Topics, comma separated
-            <input name="topics" type="text" value="${escapeHtml(topics)}">
+            Topics, comma separated (for reference)
+            <input name="topics" type="text" value="${escapeHtml(topics)}" readonly>
+          </label>
+          <label class="lls-full">
+            Topic folder name (required)
+            <input name="topic" type="text" value="${escapeHtml(defaultTopic)}" placeholder="e.g., Array, Sliding Window">
           </label>
           <label>
             Language
@@ -406,16 +417,12 @@
             <input name="commitMessage" type="text" value="${escapeHtml(pageData.commitMessage || "")}" placeholder="Time: 0 ms (100%), Space: 20.6 MB (8.11%)">
           </label>
           <label class="lls-full">
-            README notes
-            <textarea name="readme" placeholder="Paste your LeetCode note here.">${escapeHtml(pageData.notes || "")}</textarea>
-          </label>
-          <label class="lls-full">
             Solution code
             <textarea class="lls-code" name="code">${escapeHtml(pageData.code || "")}</textarea>
           </label>
           <label class="lls-confirm-row lls-full" hidden>
             <input name="overwrite" type="checkbox">
-            Existing folder found. Confirm overwrite.
+            Existing solution found. Confirm overwrite.
           </label>
         </div>
         <pre class="lls-status">${escapeHtml(
@@ -424,7 +431,7 @@
             : "Accepted status was not detected. You can still preview and save manually."
         )}</pre>
         <footer>
-          <span>${escapeHtml(folder)}</span>
+          <span>${escapeHtml(defaultTopic || "Select topic")}/${escapeHtml(folder)}</span>
           <div class="lls-actions">
             <button class="lls-secondary" data-action="preview" type="button">Preview</button>
             <button data-action="save" type="button">Save and commit</button>
