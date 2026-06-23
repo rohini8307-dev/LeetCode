@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 30,
+        "easy": 31,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "c2aec5f5affcfae7f8f4039ccd9160f0a5269295"
+                "": "58e406238cf7184f3e0599b3b78ba2305bc3f511"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -153,8 +153,12 @@
             "TwoPointers/0125-valid-palindrome": {
                 "0125-valid-palindrome.py": "bd626c746dcf9ce1e182106c89b13e0cd254e6f5",
                 "difficulty": "easy"
+            },
+            "Math/0268-missing-number": {
+                "0268-missing-number.py": "6622667a63f9a1c493bdf72aa0bc3dbe355393c3",
+                "difficulty": "easy"
             }
         },
-        "solved": 36
+        "solved": 37
     }
 }

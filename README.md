@@ -57,4 +57,8 @@
 | [0977-squares-of-a-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0977-squares-of-a-sorted-array.py) |
 | [1768-merge-strings-alternately](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/1768-merge-strings-alternately.py) |
 | [2108-find-first-palindromic-string-in-the-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/2108-find-first-palindromic-string-in-the-array.py) |
+## Math
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/rohini8307-dev/LEETCODE/tree/master/Math/0268-missing-number.py) |
 <!---LeetCode Topics End-->
