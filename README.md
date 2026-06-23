@@ -17,6 +17,7 @@
 ## BitManipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/rohini8307-dev/LEETCODE/tree/master/BitManipulation/0136-single-number.py) |
 | [0389-find-the-difference](https://github.com/rohini8307-dev/LEETCODE/tree/master/BitManipulation/0389-find-the-difference.py) |
 ## Greedy
 |  |

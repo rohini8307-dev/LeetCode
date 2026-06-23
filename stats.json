@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 27,
+        "easy": 28,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "d2d4a7781c54528ae4ad555ed73d81b0d6b07f57"
+                "": "b247223f043e64d01ebfd1a3e4606a7498c1850a"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -141,8 +141,12 @@
             "TwoPointers/0283-move-zeroes": {
                 "0283-move-zeroes.py": "573a9b252b7c3a5da3a7a9aa6b5e70aa0eac614c",
                 "difficulty": "easy"
+            },
+            "BitManipulation/0136-single-number": {
+                "0136-single-number.py": "213198c5017a75851f088709c5a066c3fc564522",
+                "difficulty": "easy"
             }
         },
-        "solved": 33
+        "solved": 34
     }
 }
