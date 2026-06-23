@@ -1,0 +1,190 @@
+.lls-save-button {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483640;
+  border: 0;
+  border-radius: 8px;
+  background: #0f766e;
+  color: #ffffff;
+  cursor: pointer;
+  font: 600 13px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 10px 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.22);
+}
+
+.lls-save-button:hover {
+  background: #115e59;
+}
+
+.lls-save-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.lls-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483641;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.58);
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.lls-modal {
+  width: min(920px, calc(100vw - 32px));
+  max-height: min(840px, calc(100vh - 32px));
+  overflow: auto;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.34);
+}
+
+.lls-modal header,
+.lls-modal footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.lls-modal footer {
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 0;
+}
+
+.lls-modal h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.lls-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 16px 18px;
+}
+
+.lls-full {
+  grid-column: 1 / -1;
+}
+
+.lls-modal label,
+.lls-options label {
+  display: grid;
+  gap: 6px;
+  color: #374151;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.lls-modal input,
+.lls-modal select,
+.lls-modal textarea,
+.lls-options input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #111827;
+  background: #ffffff;
+  font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  padding: 9px 10px;
+}
+
+.lls-modal textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.lls-modal textarea.lls-code {
+  min-height: 220px;
+}
+
+.lls-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.lls-modal button,
+.lls-options button {
+  border: 0;
+  border-radius: 6px;
+  background: #0f766e;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 9px 12px;
+}
+
+.lls-modal button.lls-secondary,
+.lls-options button[type="button"] {
+  background: #475569;
+}
+
+.lls-modal button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.lls-status {
+  white-space: pre-wrap;
+  margin: 0 18px 16px;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #334155;
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  padding: 12px;
+}
+
+.lls-confirm-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #92400e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lls-confirm-row input {
+  width: auto;
+}
+
+.lls-options {
+  min-width: 340px;
+  margin: 0;
+  background: #f8fafc;
+}
+
+.lls-options-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.lls-options-panel h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.lls-options-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lls-options pre {
+  min-height: 64px;
+  overflow: auto;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #334155;
+  padding: 10px;
+  white-space: pre-wrap;
+}
