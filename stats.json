@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 20,
+        "easy": 21,
         "hard": 0,
         "medium": 3,
         "shas": {
             "README.md": {
-                "": "a5ea4b04b3832a6f7b4ebfc8ef63458f918e09a7"
+                "": "188ff287b74bafb471ad65c390edd2c5511d76b1"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -101,8 +101,12 @@
             "TwoPointers/0821-shortest-distance-to-a-character": {
                 "0821-shortest-distance-to-a-character.py": "d05a14d75f6e2038a3847bab3d191b00805990dd",
                 "difficulty": "easy"
+            },
+            "TwoPointers/0977-squares-of-a-sorted-array": {
+                "0977-squares-of-a-sorted-array.py": "7d8eeb301a5f501b685e1d433b85df99faa83980",
+                "difficulty": "easy"
             }
         },
-        "solved": 23
+        "solved": 24
     }
 }
