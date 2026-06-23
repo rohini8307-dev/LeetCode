@@ -4,6 +4,7 @@
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0189-rotate-array.py) |
+| [0485-max-consecutive-ones](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0485-max-consecutive-ones.py) |
 | [0821-shortest-distance](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/0821-shortest-distance.py) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1295-find-numbers-with-even-number-of-digits.py) |
 | [1480-running-sum-of-1d-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1480-running-sum-of-1d-array.py) |
