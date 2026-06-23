@@ -5,7 +5,7 @@
         "medium": 1,
         "shas": {
             "README.md": {
-                "": "e111bc2634b6af780b6fea7990a9ef029509d7c5"
+                "": "3976a1ef3e9f4b9d2ddf66651ad3980b348c41fd"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -17,10 +17,6 @@
             "Intervals/0057-insert-interval": {
                 "0057-insert-interval.py": "7c2c960d22727da672fdfdcf9501144accf078c9",
                 "difficulty": "medium"
-            },
-            "Array/0121-best-time-to-buy-and-sell-stock": {
-                "0121-best-time-to-buy-and-sell-stock.py": "14481e36b1526b34da6c83decf45fb5d710c0da3",
-                "difficulty": "easy"
             },
             "Array/1295-find-numbers-with-even-number-of-digits": {
                 "1295-find-numbers-with-even-number-of-digits.py": "48b19f51db6b4cba297f626bd58597d8a9dd456d",
@@ -60,6 +56,10 @@
             },
             "Greedy/0121-best-time-to-buy-and-sell-stock": {
                 "0121-best-time-to-buy-and-sell-stock.py": "14481e36b1526b34da6c83decf45fb5d710c0da3",
+                "difficulty": "easy"
+            },
+            "Two Pointers/0344-reverse-string": {
+                "0344-reverse-string.py": "d17fb4e8927a469cf4c3ea3c786ec105b371fb6a",
                 "difficulty": "easy"
             }
         },
