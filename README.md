@@ -44,6 +44,7 @@
 | [0027-remove-element](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0027-remove-element.py) |
 | [0075-sort-colors](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0075-sort-colors.py) |
 | [0088-merge-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0088-merge-sorted-array.py) |
+| [0125-valid-palindrome](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0125-valid-palindrome.py) |
 | [0151-reverse-words-in-a-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0151-reverse-words-in-a-string.py) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0167-two-sum-ii-input-array-is-sorted.py) |
 | [0283-move-zeroes](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0283-move-zeroes.py) |
