@@ -34,6 +34,7 @@
 ## TwoPointers
 |  |
 | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0026-remove-duplicates-from-sorted-array.py) |
 | [0088-merge-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0088-merge-sorted-array.py) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0167-two-sum-ii-input-array-is-sorted.py) |
 | [0344-reverse-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/TwoPointers/0344-reverse-string.py) |
