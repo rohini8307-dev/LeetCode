@@ -8,6 +8,7 @@
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1295-find-numbers-with-even-number-of-digits.py) |
 | [1480-running-sum-of-1d-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1480-running-sum-of-1d-array.py) |
 | [1672-richest-customer-wealth](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/1672-richest-customer-wealth.py) |
+| [2529-maximum-count-of-positive-integer-and-negative-integer](https://github.com/rohini8307-dev/LEETCODE/tree/master/Array/2529-maximum-count-of-positive-integer-and-negative-integer.py) |
 ## BinarySearch
 |  |
 | ------- |
