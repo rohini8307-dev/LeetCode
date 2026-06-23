@@ -1,11 +1,11 @@
 {
     "leetcode": {
-        "easy": 25,
+        "easy": 26,
         "hard": 0,
         "medium": 6,
         "shas": {
             "README.md": {
-                "": "27a8f2d234e5d61467a3e2e78b62df78dd3a5ba8"
+                "": "aeea34be0554f8e0d213895b21f48083988c1d61"
             },
             "stats.json": {
                 "": "2109cf7efc4f986065ef662ef30f4164df172bc4"
@@ -133,8 +133,12 @@
             "Greedy/0169-majority-element": {
                 "0169-majority-element.py": "47adc063c320caa0f2d994baa4ae21b55a937e60",
                 "difficulty": "easy"
+            },
+            "HashTable/0242-valid-anagram": {
+                "0242-valid-anagram.py": "0f2f9b39189f3ceb027cb2e5078f84728ec0d5b8",
+                "difficulty": "easy"
             }
         },
-        "solved": 31
+        "solved": 32
     }
 }

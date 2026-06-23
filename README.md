@@ -28,6 +28,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0001-two-sum.py) |
 | [0217-contains-duplicate](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0217-contains-duplicate.py) |
+| [0242-valid-anagram](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0242-valid-anagram.py) |
 | [0349-intersection-of-two-arrays](https://github.com/rohini8307-dev/LEETCODE/tree/master/HashTable/0349-intersection-of-two-arrays.py) |
 ## Intervals
 |  |
