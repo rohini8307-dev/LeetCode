@@ -33,5 +33,6 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0088-merge-sorted-array.py) |
 | [0344-reverse-string](https://github.com/rohini8307-dev/LEETCODE/tree/master/Two Pointers/0344-reverse-string.py) |
 <!---LeetCode Topics End-->
