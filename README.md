@@ -63,6 +63,10 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters.py](https://github.com/rohini8307-dev/LeetCode/blob/main/SlidingWindow/0003-longest-substring-without-repeating-characters.py)|
+| [0340-longest-substring-with-at-most-k-distinct-characters.py](https://github.com/rohini8307-dev/LeetCode/blob/main/SlidingWindow/0340-longest-substring-with-at-most-k-distinct-characters.py)|
+| [0567-permutation-in-string.py](https://github.com/rohini8307-dev/LeetCode/blob/main/SlidingWindow/0567-permutation-in-string.py)|
+| [0904-fruit-into-baskets.py](https://github.com/rohini8307-dev/LeetCode/blob/main/SlidingWindow/0904-fruit-into-baskets.py)|
+| [1004-max-consecutive-ones-iii.py](https://github.com/rohini8307-dev/LeetCode/blob/main/SlidingWindow/1004-max-consecutive-ones-iii.py)|
 ## Math
 |  |
 | ------- |
